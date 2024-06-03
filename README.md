@@ -15,9 +15,6 @@ Global Solution | Digital Business Enablement
 > [!IMPORTANT]
 > **Banco de Dados : Azure Database**
 > <BR>
-> **Deverá ser usado URL:** <BR>
-> Spring: http://localhost:8080 <BR>
-> <BR>
   ---
 
 ## CONTROLLER EMPRESA
