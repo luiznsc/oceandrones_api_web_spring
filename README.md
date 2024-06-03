@@ -30,8 +30,8 @@ Global Solution | Digital Business Enablement
   ```json
     {
         "nomeUsuario": "João",
-        "sobrenomeUsuario": "Almeida,
-        "cpfUsuario": "111.222.333-50,
+        "sobrenomeUsuario": "Almeida",
+        "cpfUsuario": "111.222.333-50",
         "telUsuario": "(11)98765-4321",
         "emailUsuario": "joaoalmeida@gmail.com",
         "senhaUsuario": "Senha123",
@@ -62,7 +62,7 @@ Global Solution | Digital Business Enablement
   ```json
     {
         "nomeUsuario": "João",
-        "sobrenomeUsuario": "Almeida,
+        "sobrenomeUsuario": "Almeida",
         "telUsuario": "(11)98765-4321",
         "emailUsuario": "joaoalmeida@gmail.com",
         "senhaUsuario": "Senha123",
