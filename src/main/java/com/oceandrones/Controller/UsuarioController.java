@@ -1,10 +1,7 @@
 package com.oceandrones.Controller;
 
 
-import com.oceandrones.Usuario.IUsuarioRepository;
-import com.oceandrones.Usuario.RDadosAtualizacaoUsuario;
-import com.oceandrones.Usuario.RDadosListagemUsuario;
-import com.oceandrones.Usuario.Usuario;
+import com.oceandrones.Usuario.*;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
@@ -26,8 +23,8 @@ public class UsuarioController {
     @PostMapping("/cadastrar")
     @Transactional
     @PreAuthorize("hasRole('ADMIN')")
-    public void cadastroUsuario(@RequestBody @Valid IUsuarioRepository dadosUsuario){
-        usuarioRepository.save(new Usuario(String.valueOf(dadosUsuario)));
+    public void cadastroUsuario(@RequestBody @Valid RDadosCadastroUsuario dadosUsuario){
+        usuarioRepository.save(new Usuario(dadosUsuario));
     }
 
     @GetMapping("/buscar")

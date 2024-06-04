@@ -3,6 +3,7 @@ package com.oceandrones.Usuario;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchConnectionDetails;
 
 @Table(name = "TB_USUARIO")
 @Entity
@@ -51,6 +52,7 @@ public class Usuario {
         this.emailUsuario = dadosUsuario.emailUsuario();
         this.senhaUsuario = dadosUsuario.senhaUsuario();
     }
+
 
     public void atualizarUsuario(RDadosAtualizacaoUsuario dadosAtualizacaoUsuario) {
         if (dadosAtualizacaoUsuario.nomeUsuario() != null) {
