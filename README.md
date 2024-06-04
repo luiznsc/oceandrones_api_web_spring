@@ -14,7 +14,7 @@ Global Solution | Digital Business Enablement
 
 > [!IMPORTANT]
 > **Banco de Dados : Azure Database** <BR>
-> **LINK DO POSTMAN PARA TESTE DA API** : (POSTMAN TESTE API)[https://www.postman.com/maintenance-geologist-96532518/workspace/gs-oceandrones]
+> **LINK DO POSTMAN PARA TESTE DA API** : [POSTMAN TESTE API](https://www.postman.com/maintenance-geologist-96532518/workspace/gs-oceandrones)
 > <BR>
   ---
 
