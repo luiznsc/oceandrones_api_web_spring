@@ -48,11 +48,11 @@ Global Solution | Digital Business Enablement
 > emailUsuario,<BR/>
 > senhaUsuario, <BR/>
 
-- **URL:** /usuarios/atualizar/{idEmpresa}
+- **URL:** /usuarios/atualizar/{idUsuario}
 - **Método:** PUT
 - **Descrição:** Atualiza os dados de um usuário existente
 - **Parâmetros da URL:**
-  - {idEmpresa} - ID do usuario a ter os dados atualizados.
+  - {idUsuario} - ID do usuario a ter os dados atualizados.
 - **Códigos de Status:**
   - :white_check_mark: 200 (OK) - Dados usuários atualizados com sucesso.
   - :warning: 400 (Bad Request) - Dados de entrada inválidos.
@@ -61,20 +61,22 @@ Global Solution | Digital Business Enablement
 
   ```json
     {
-        "nomeUsuario": "João",
-        "sobrenomeUsuario": "Almeida",
-        "telUsuario": "(11)98765-4321",
-        "emailUsuario": "joaoalmeida@gmail.com",
-        "senhaUsuario": "Senha123",
+        "nomeUsuario": "João Victor",
+        "telUsuario": "(11)95050-1010",
+        "emailUsuario": "joaoalmeida@hotmail.com",
+        "senhaUsuario": "Senha1235"
     }
 
 ---
 
 ### :page_with_curl: BUSCAR USUÁRIO / VISUALIZAR USUÁRIO
 
-- **URL:** /usuarios/buscar
+- **URL:** /usuarios/buscar?{emailUsuario}&{senhaUsuario}
 - **Método:** GET
 - **Descrição:** Retorna os detalhes dos usuarios
+- **Parâmetros da URL:**
+  - {emailUsuario} - email cadastrado do usuário
+  - {senhaUsuario} - senha cadastrada do usuário
 - **Códigos de Status:**
   - :white_check_mark: 200 (OK) - Dados dos usuários retornados com sucesso.
   - :x: 404 (Not Found) - Usuário não encontrada.
@@ -83,7 +85,7 @@ Global Solution | Digital Business Enablement
 
 ### :wastebasket: APAGAR USUÁRIO
 
-- **URL:** /usuarios/excluir/{idEmpresa}
+- **URL:** /usuarios/deletar/{idEmpresa}
 - **Método:** DELETE
 - **Descrição:** Deletar um cadastro de usuário.
 - **Parâmetros da URL:**
