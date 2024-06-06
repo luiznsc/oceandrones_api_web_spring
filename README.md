@@ -13,11 +13,17 @@ Global Solution | Digital Business Enablement
 > - CRUD (Create, Read, Update e Delete) de usuários.
 
 > [!IMPORTANT]
-> **Banco de Dados : **Azure Database <BR>
+> **Banco de Dados** : Azure Database
+
+> [!IMPORTANT]
 > **APLICAÇÃO EM NUVEM**:
-> A aplicação está rodando em nuvem na Azure, assim como o banco de dados.<br>
+> - A aplicação está rodando em nuvem na Azure, assim como o banco de dados.<br>
 > Para realizar teste de requisições deverá ser usado o SWAGGER -> <br>
-> https://oceandrones-spring.azurewebsites.net/swagger-ui/index.html
+> https://oceandrones-spring.azurewebsites.net/swagger-ui/index.html<br>
+> <br>
+> - Ao acessar o link será solicitado LOGIN e SENHA, deverá ser usado os dados do SpringSecurity:
+> Login: oceandrones
+> Senha: 12345
 > <BR>
   ---
 
