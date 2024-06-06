@@ -9,7 +9,7 @@ trigger:
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: '7ace5dd2-22a5-489a-8fc8-18735a795968'
+  azureSubscription: 'a333be56-9cbd-4f85-955f-033ae5183aa9'
 
   # Web app name
   webAppName: 'oceandrones-webapp-spring'
