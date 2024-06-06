@@ -13,8 +13,11 @@ Global Solution | Digital Business Enablement
 > - CRUD (Create, Read, Update e Delete) de usuários.
 
 > [!IMPORTANT]
-> **Banco de Dados : Azure Database** <BR>
-> **LINK DO POSTMAN PARA TESTE DA API** : [POSTMAN TESTE API](https://www.postman.com/maintenance-geologist-96532518/workspace/gs-oceandrones)
+> **Banco de Dados : **Azure Database <BR>
+> **APLICAÇÃO EM NUVEM**:
+> A aplicação está rodando em nuvem na Azure, assim como o banco de dados.<br>
+> Para realizar teste de requisições deverá ser usado o SWAGGER -> <br>
+> https://oceandrones-spring.azurewebsites.net/swagger-ui/index.html
 > <BR>
   ---
 
