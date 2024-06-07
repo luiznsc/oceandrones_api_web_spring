@@ -34,7 +34,8 @@ public class UsuarioController {
         @RequestParam(name = "senhaUsuario") String senhaUsuario,
         @PageableDefault(size = 1, sort = {"nomeUsuario"}) Pageable paginacao){
 
-        Usuario usuario = usuarioRepository.findByEmailUsuarioAndSenhaUsuario(emailUsuario, emailUsuario);
+        Usuario usuario = usuarioRepository.findByEmailUsuarioAndSenhaUsuario(emailUsuario, senhaUsuario);
+        //Usuario usuario = usuarioRepository.findAllByIdUsuario(long idUsuario, <paginacao>);
 
         if (usuario == null) {
             return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
