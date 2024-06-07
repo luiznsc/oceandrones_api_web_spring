@@ -11,6 +11,7 @@ Global Solution | Digital Business Enablement
 ## DOCUMENTAÇÃO DA API
 #### FUNCIONALIDADES:
 > - CRUD (Create, Read, Update e Delete) de usuários.
+> - Cadastrar e deletar requisições de expedição de drones.
 
 > [!IMPORTANT]
 > **BANCO DE DADOS**<br>
