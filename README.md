@@ -7,6 +7,15 @@ Global Solution | Digital Business Enablement
 > Nome: Luiz Henrique de Jesus do Nascimento | RM: 96335 <BR>
 > Nome: Samuel Enderson Lima da Silva | RM: 96677 <BR>
 
+## OBJETIVO
+> - A OceanDrones tem como objetivo fornecer dados precisos e abrangentes sobre as regiões oceânicas da costa brasileira.<br>
+> Utilizando drones aquáticos, a empresa coleta informações detalhadas sobre a saúde dos ecossistemas marinhos,<br>
+> a presença de espécies e a qualidade dos recifes. Esses dados são essenciais para<br>
+> promover a conservação, a pesquisa científica e a gestão sustentável dos oceanos. Dessa forma<br>
+> as intituições interessadas em promover a preservação e manutenabilidade dos oceanos<br>
+> poderão se preocuparcom a parte mais importante: usar esses dados de maneira positiva, <br.
+> Enquanto a OceanDrones cuida da parte técnica, burocrática, logística e mão de obra.
+
 ---
 ## DOCUMENTAÇÃO DA API
 #### FUNCIONALIDADES:
@@ -127,44 +136,12 @@ Global Solution | Digital Business Enablement
 - **Corpo da Solicitação (JSON):**
 
   ```json
-  {
+    {
       "drones": "IBUBBLE",
-      "ufEstado": "AM",
+      "ufExpedicao": "AM",
       "porto": "PORTOCHIBATAO",
       "trajeto": "TRAJETOPORTOCHIBATAO"
-  }
-
-
-
----
-
-### :repeat: ATUALIZAR EXPEDIÇÃO DRONE
-> [!IMPORTANT]
-> **Poderão ser atualizados apenas os campos:** <BR/>
-> nomeUsuario, <BR/>
-> sobrenomeUsuario, <BR/>
-> telUsuario, <BR/>
-> emailUsuario,<BR/>
-> senhaUsuario, <BR/>
-
-- **URL:** /expedicaodrones/atualizar/{idExpDrone}
-- **Método:** PUT
-- **Descrição:** Atualiza os dados de uma expedição
-- **Parâmetros da URL:**
-  - {idExpDrone} - ID da expedição de drone
-- **Códigos de Status:**
-  - :white_check_mark: 200 (OK) - Dados da expedição atualizados com sucesso.
-  - :warning: 400 (Bad Request) - Dados de entrada inválidos.
-  - :x: 404 (Not Found) - Expedição não encontrada.
-- **Corpo da Solicitação (JSON):**
-
-  ```json
-  {
-      "drones": "IBUBBLE",
-      "ufExpedicao": "RJ",
-      "porto": "PORTOCHIBATAO",
-      "trajeto": "TRAJETOPORTOCHIBATAO"
-  }
+    }
 
 ---
 
