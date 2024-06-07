@@ -12,7 +12,7 @@ import org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchConnect
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "idUsuario")
-
+//testei a relase do pipeline
 public class Usuario {
 
     @Id
