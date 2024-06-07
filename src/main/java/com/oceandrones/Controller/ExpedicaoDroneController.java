@@ -23,10 +23,4 @@ public class ExpedicaoDroneController {
     public void cadastroExpedicaoDrone(@RequestBody @Valid RDadosCadastroExpedicaoDrone dadosCadastroExpedicaoDrone){
         expedicaoDroneRepository.save(new ExpedicaoDrone(dadosCadastroExpedicaoDrone));
     }
-
-    @DeleteMapping("/deletar/{idExpDrone}")
-    @Transactional
-    @PreAuthorize("hasRole('ADMIN')")
-    public void deletarExpedicaoDrone(@PathVariable Long idExpDrone){ expedicaoDroneRepository.deleteById(idExpDrone);
-    }
 }
