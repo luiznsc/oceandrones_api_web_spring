@@ -11,6 +11,7 @@ Global Solution | Digital Business Enablement
 ## DOCUMENTAÇÃO DA API
 #### FUNCIONALIDADES:
 > - CRUD (Create, Read, Update e Delete) de usuários.
+> - Cadastrar e deletar requisições de expedição de drones.
 
 > [!IMPORTANT]
 > **BANCO DE DADOS**<br>
@@ -20,7 +21,7 @@ Global Solution | Digital Business Enablement
 > **APLICAÇÃO EM NUVEM**:
 > - A aplicação está rodando em nuvem na Azure, assim como o banco de dados.<br>
 > Para realizar teste de requisições poderá ser usado o SWAGGER -> <br>
-> https://oceandrones-spring.azurewebsites.net/swagger-ui/index.html<br>
+> https://oceandrones-weabpp-java.azurewebsites.net/swagger-ui/index.html<br>
 > <br>
 > - Ao acessar o link será solicitado LOGIN e SENHA, deverá ser usado os dados do SpringSecurity:
 > Login: oceandrones
@@ -160,22 +161,10 @@ Global Solution | Digital Business Enablement
   ```json
   {
       "drones": "IBUBBLE",
-      "ufEstado": "RJ",
+      "ufExpedicao": "RJ",
       "porto": "PORTOCHIBATAO",
       "trajeto": "TRAJETOPORTOCHIBATAO"
   }
-
-
----
-
-### :page_with_curl: BUSCAR EXPEDIÇÃO / VISUALIZAR EXPEDIÇÃO
-
-- **URL:** /expedicaodrones/buscar
-- **Método:** GET
-- **Descrição:** Retorna os detalhes das expedições
-- **Códigos de Status:**
-  - :white_check_mark: 200 (OK) - Dados da expedição retornados com sucesso.
-  - :x: 404 (Not Found) - Expedição não encontrada.
 
 ---
 
@@ -185,7 +174,7 @@ Global Solution | Digital Business Enablement
 - **Método:** DELETE
 - **Descrição:** Deletar uma expedição cadastrada.
 - **Parâmetros da URL:**
-  - {idEmpresa} - ID da expedição a ser deletada
+  - {idExpDrone} - ID da expedição a ser deletada
 - **Códigos de Status:**
   - :white_check_mark: 204 (No Content) - Expedição deletada com sucesso.
   - :x: 404 (Not Found) - Expedição não encontrado.
