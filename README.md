@@ -34,11 +34,11 @@ Global Solution | Digital Business Enablement
 
   ---
 
-## CONTROLLER EMPRESA
-### :heavy_plus_sign: CADASTRAR EMPRESA
+## CONTROLLER USUÁRIO
+### :heavy_plus_sign: CADASTRAR USUÁRIO
 - **URL:** /usuario/cadastrar
 - **Método:** POST
-- **Descrição:** Cadastrar uma novo usuário
+- **Descrição:** Cadastrar um novo usuário
 - **Códigos de Status:**
   - :white_check_mark: 201 (Created) - Usuário cadastrado com sucesso
   -  :warning: 400 (Bad Request) - Dados de entrada inválidos.
@@ -112,3 +112,81 @@ Global Solution | Digital Business Enablement
   - :x: 404 (Not Found) - Usuário não encontrado.
  
 ---
+
+  ---
+
+## CONTROLLER EXPEDICAO DRONE 
+### :heavy_plus_sign: CADASTRAR EXPEDIÇÃO DE UM DRONE
+- **URL:** /expedicaodrones/cadastrar
+- **Método:** POST
+- **Descrição:** Cadastrar uma nova expedição de drone.
+- **Códigos de Status:**
+  - :white_check_mark: 201 (Created) - Expedição cadastrada com sucesso
+  -  :warning: 400 (Bad Request) - Dados de entrada inválidos.
+- **Corpo da Solicitação (JSON):**
+
+  ```json
+  {
+      "drones": "IBUBBLE",
+      "ufEstado": "AM",
+      "porto": "PORTOCHIBATAO",
+      "trajeto": "TRAJETOPORTOCHIBATAO"
+  }
+
+
+
+---
+
+### :repeat: ATUALIZAR EXPEDIÇÃO DRONE
+> [!IMPORTANT]
+> **Poderão ser atualizados apenas os campos:** <BR/>
+> nomeUsuario, <BR/>
+> sobrenomeUsuario, <BR/>
+> telUsuario, <BR/>
+> emailUsuario,<BR/>
+> senhaUsuario, <BR/>
+
+- **URL:** /expedicaodrones/atualizar/{idExpDrone}
+- **Método:** PUT
+- **Descrição:** Atualiza os dados de uma expedição
+- **Parâmetros da URL:**
+  - {idExpDrone} - ID da expedição de drone
+- **Códigos de Status:**
+  - :white_check_mark: 200 (OK) - Dados da expedição atualizados com sucesso.
+  - :warning: 400 (Bad Request) - Dados de entrada inválidos.
+  - :x: 404 (Not Found) - Expedição não encontrada.
+- **Corpo da Solicitação (JSON):**
+
+  ```json
+  {
+      "drones": "IBUBBLE",
+      "ufEstado": "RJ",
+      "porto": "PORTOCHIBATAO",
+      "trajeto": "TRAJETOPORTOCHIBATAO"
+  }
+
+
+---
+
+### :page_with_curl: BUSCAR EXPEDIÇÃO / VISUALIZAR EXPEDIÇÃO
+
+- **URL:** /expedicaodrones/buscar
+- **Método:** GET
+- **Descrição:** Retorna os detalhes das expedições
+- **Códigos de Status:**
+  - :white_check_mark: 200 (OK) - Dados da expedição retornados com sucesso.
+  - :x: 404 (Not Found) - Expedição não encontrada.
+
+---
+
+### :wastebasket: APAGAR EXPEDIÇÃO
+
+- **URL:** /expedicaodrones/deletar/{idExpDrone}
+- **Método:** DELETE
+- **Descrição:** Deletar uma expedição cadastrada.
+- **Parâmetros da URL:**
+  - {idEmpresa} - ID da expedição a ser deletada
+- **Códigos de Status:**
+  - :white_check_mark: 204 (No Content) - Expedição deletada com sucesso.
+  - :x: 404 (Not Found) - Expedição não encontrado.
+ 
