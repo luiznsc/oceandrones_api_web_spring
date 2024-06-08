@@ -13,7 +13,7 @@ Global Solution | Digital Business Enablement
 > a presença de espécies e a qualidade dos recifes. Esses dados são essenciais para<br>
 > promover a conservação, a pesquisa científica e a gestão sustentável dos oceanos. Dessa forma<br>
 > as intituições interessadas em promover a preservação e manutenabilidade dos oceanos<br>
-> poderão se preocuparcom a parte mais importante: usar esses dados de maneira positiva, <br.
+> poderão se preocuparcom a parte mais importante: usar esses dados de maneira positiva. <br>
 > Enquanto a OceanDrones cuida da parte técnica, burocrática, logística e mão de obra.
 
 ---
