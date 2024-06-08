@@ -32,14 +32,15 @@ Global Solution | Digital Business Enablement
 > Para realizar teste de requisições poderá ser usado o SWAGGER -> <br>
 > https://oceandrones-weabpp-java.azurewebsites.net/swagger-ui/index.html<br>
 > <br>
-> - Ao acessar o link será solicitado LOGIN e SENHA, deverá ser usado os dados do SpringSecurity:
-> Login: oceandrones
-> Senha: 12345
+>
+> **Ao acessar o link será solicitado LOGIN e SENHA, deverá ser usado os dados do SpringSecurity:** <br>
+>   **Login: oceandrones** <br>
+>   **Senha: 12345**
 > <BR>
 
 > [!IMPORTANT]
 > Caso queira usar outro testador de API, basta utilizar a url:<br>
-> https://oceandrones-spring.azurewebsites.net/<br>
+> https://oceandrones-weabpp-java.azurewebsites.net/<br>
 > e acrescentar os caminhos conforme a documentação abaixo.
 
   ---
